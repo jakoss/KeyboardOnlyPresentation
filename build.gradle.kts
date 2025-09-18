@@ -1,16 +1,12 @@
 plugins {
-    kotlin("multiplatform") version "2.0.20"
-    kotlin("plugin.compose") version "2.0.20"
+    kotlin("multiplatform") version "2.0.21"
+    kotlin("plugin.compose") version "2.0.21"
     id("org.jetbrains.compose") version "1.6.11"
     id("net.kodein.cup") version "1.0.0-Beta-09"
 }
 
 cup {
     targetDesktop()
-
-    // TODO: If you comment this (you don't want to export your presentation as a web page),
-    //  you must remove the .github/workflows/pages.yml file as well.
-    targetWeb()
 }
 
 kotlin {
@@ -18,8 +14,6 @@ kotlin {
         dependencies {
             // Includes Source Code highlighting & animations.
             implementation(cup.sourceCode)
-
-            // TODO: Select plugins (comment or uncomment function of your needs)
 
             // Secondary window with preview & speaker notes.
             implementation(cup.plugin.speakerWindow)

@@ -10,13 +10,17 @@ import net.kodein.cup.laser.laser
 import net.kodein.cup.speaker.speakerWindow
 import net.kodein.cup.widgets.material.cupScaleDown
 import org.kodein.emoji.compose.EmojiService
+import slides.agenda
+import slides.ide
 import slides.intro
-import slides.todo
+import slides.keyboard
+import slides.lazygit
+import slides.raycast
+import slides.terminal
 
 
 fun main() = cupApplication(
-    // TODO: Change title
-    title = "My Amazing Presentation!"
+    title = "Wyrzuć swoją starą... myszkę przez okno"
 ) {
     remember {
         // https://github.com/kosi-libs/Emoji.kt?tab=readme-ov-file#initializing-the-emoji-service
@@ -24,14 +28,12 @@ fun main() = cupApplication(
     }
 
     MaterialTheme(
-        // TODO: Apply your theme
         colors = darkColors(),
         typography = MaterialTheme.typography.cupScaleDown()
     ) {
         Presentation(
             slides = presentationSlides,
             configuration = {
-                // TODO: Configure plugins
                 speakerWindow()
                 laser()
             },
@@ -46,8 +48,12 @@ fun main() = cupApplication(
     }
 }
 
-// TODO: Write your own slides!
 val presentationSlides = Slides(
     intro,
-    todo
+    agenda,
+    keyboard,
+    ide,
+    raycast,
+    terminal,
+    lazygit
 )
