@@ -7,7 +7,8 @@ import net.kodein.cup.speaker.SpeakerNotes
 
 val teams by Slide(
     user = SpeakerNotes("""
-         Pokazać problemy z teamsami i pomarudzić na wielkie korporacje
+        Przeglądarki i ich podejście do skrótów. Same aplikacje webowe rzadko dbają o skróty.
+        Pokazać problemy z teamsami i pomarudzić na wielkie korporacje.
     """.trimIndent() )
 ) {
     Text(
