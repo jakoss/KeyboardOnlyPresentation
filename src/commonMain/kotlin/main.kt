@@ -11,11 +11,14 @@ import net.kodein.cup.speaker.speakerWindow
 import net.kodein.cup.widgets.material.cupScaleDown
 import org.kodein.emoji.compose.EmojiService
 import slides.agenda
+import slides.end
+import slides.hardcore
 import slides.ide
 import slides.intro
 import slides.keyboard
 import slides.lazygit
 import slides.raycast
+import slides.teams
 import slides.terminal
 
 
@@ -55,5 +58,8 @@ val presentationSlides = Slides(
     ide,
     raycast,
     terminal,
-    lazygit
+    lazygit,
+    teams,
+    hardcore,
+    end
 )

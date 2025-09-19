@@ -26,6 +26,6 @@ val keyboard by Slide(
         painterResource(Res.drawable.keyboards),
         contentDescription = "Keyboard types",
         modifier = Modifier
-            .size(300.dp)
+            .size(280.dp)
     )
 }

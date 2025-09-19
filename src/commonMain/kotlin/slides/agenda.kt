@@ -8,7 +8,7 @@ import net.kodein.cup.widgets.material.BulletPoints
 
 
 val agenda by Slide(
-    stepCount = 7,
+    stepCount = 8,
     user = SpeakerNotes(
         """
         - Szybko o agendzie
@@ -37,6 +37,9 @@ val agenda by Slide(
             Text("LazyGit")
         }
         BulletPoint(visible = step >= 6) {
+            Text("Why we can't have nice things")
+        }
+        BulletPoint(visible = step >= 7) {
             Text("Sekcja dla hardkorów (jak wystarczy czasu)")
         }
     }

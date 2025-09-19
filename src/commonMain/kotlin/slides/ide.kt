@@ -9,12 +9,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import keyboardonlypresentation.generated.resources.Res
-import keyboardonlypresentation.generated.resources.jetbrains
-import keyboardonlypresentation.generated.resources.lazygit
-import keyboardonlypresentation.generated.resources.nvim
-import keyboardonlypresentation.generated.resources.visualstudio
-import keyboardonlypresentation.generated.resources.vscode
+import keyboardonlypresentation.generated.resources.*
 import net.kodein.cup.Slide
 import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
@@ -25,6 +20,7 @@ val ide by Slide(
         Ważne jest to żeby poznać dobrze swoje IDE
         - Zaplanuj skróty wokół swojego często flow, nie musisz znać wszystkiego
         - Rider:
+          - Nawigacja po edytorze
           - Cmd + e
           - Double Shift (niemal każde IDE ma swój command palette i jest to jeden z must-know feature)
           - Open terminal
